@@ -6,7 +6,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="deleteButton" destination="NYV-Sr-HOg" id="bXx-BQ-Il9"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="returnButton" destination="NYV-Sr-HOg" id="0JX-TM-O9B"/>
+                <outlet property="spaceButton" destination="AWT-go-gOB" id="IOM-E4-6HX"/>
+                <outletCollection property="dongerButtons" destination="1PS-H7-qmT" collectionClass="NSMutableArray" id="FtN-pq-SYx"/>
+                <outletCollection property="spaceButton" destination="AWT-go-gOB" id="E5F-qg-6tX"/>
+                <outletCollection property="dongerButtons" destination="wOd-ti-eHc" collectionClass="NSMutableArray" id="cIu-au-iDd"/>
+                <outletCollection property="dongerButtons" destination="qiy-wv-4bn" collectionClass="NSMutableArray" id="9Ax-2u-oRB"/>
+                <outletCollection property="dongerButtons" destination="GYs-4f-EGh" collectionClass="NSMutableArray" id="ElC-z5-1CP"/>
+                <outletCollection property="dongerButtons" destination="1qf-gV-dqz" collectionClass="NSMutableArray" id="MJE-4y-7Ty"/>
+                <outletCollection property="dongerButtons" destination="i26-hG-HSw" collectionClass="NSMutableArray" id="lmB-PF-9Qz"/>
+                <outletCollection property="dongerButtons" destination="MxH-xP-kxC" collectionClass="NSMutableArray" id="H63-RT-95g"/>
+                <outletCollection property="dongerButtons" destination="ZAn-Av-nyr" collectionClass="NSMutableArray" id="gRv-JT-H8s"/>
+                <outletCollection property="dongerButtons" destination="Y43-Uc-fv5" collectionClass="NSMutableArray" id="lwA-dj-n5f"/>
+                <outletCollection property="dongerButtons" destination="wOd-ti-eHc" collectionClass="NSMutableArray" id="VOi-bc-W5y"/>
+                <outletCollection property="dongerButtons" destination="6v2-Ie-kPO" collectionClass="NSMutableArray" id="Wit-tf-a0d"/>
+                <outletCollection property="dongerButtons" destination="XnZ-kc-fVx" collectionClass="NSMutableArray" id="52g-WG-dMN"/>
+                <outletCollection property="dongerButtons" destination="K9K-vr-bbE" collectionClass="NSMutableArray" id="nd5-6z-5sP"/>
+                <outletCollection property="dongerButtons" destination="oah-nf-MbK" collectionClass="NSMutableArray" id="dg1-OU-y2H"/>
+                <outletCollection property="dongerButtons" destination="KqM-Uf-8Fp" collectionClass="NSMutableArray" id="t19-EE-V1t"/>
+                <outletCollection property="dongerButtons" destination="tNc-gJ-gHr" collectionClass="NSMutableArray" id="oh3-c3-naI"/>
+                <outletCollection property="dongerButtons" destination="JZY-nB-RU1" collectionClass="NSMutableArray" id="T8P-Sy-av0"/>
+                <outletCollection property="spaceButton" destination="NYV-Sr-HOg" id="3Us-Kn-tMS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,139 +37,201 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i26-hG-HSw">
-                    <rect key="frame" x="106" y="10" width="75" height="30"/>
+                    <rect key="frame" x="110" y="10" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
                     <state key="normal" title="ヽ༼ຈل͜ຈ༽ﾉ">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="HGs-Iv-j42"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-xP-kxC">
-                    <rect key="frame" x="198" y="10" width="75" height="30"/>
+                    <rect key="frame" x="194" y="8" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
                     <state key="normal" title="(◕‿◕✿)">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="sG7-p1-B0X"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-ti-eHc">
-                    <rect key="frame" x="106" y="48" width="75" height="30"/>
+                    <rect key="frame" x="110" y="48" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="eon">
+                    <state key="normal" title="༼ ಠل͟ಠ༽">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="aAe-L2-J9z"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-4f-EGh">
-                    <rect key="frame" x="198" y="48" width="75" height="30"/>
+                    <rect key="frame" x="194" y="46" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="r">
+                    <state key="normal" title="(^ ◕ᴥ◕ ^)">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="pLK-lm-k1s"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v2-Ie-kPO">
-                    <rect key="frame" x="292" y="48" width="75" height="30"/>
+                    <rect key="frame" x="277" y="46" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="ererre">
+                    <state key="normal">
+                        <string key="title">(☞ﾟヮﾟ)☞
+</string>
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="PvS-EN-aGX"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y43-Uc-fv5">
-                    <rect key="frame" x="8" y="48" width="75" height="30"/>
+                    <rect key="frame" x="27" y="48" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="  fslkj">
+                    <state key="normal" title="( ͡⚆ ͜ʖ ͡⚆)">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-kc-fVx">
-                    <rect key="frame" x="106" y="87" width="75" height="30"/>
-                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="ere">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-wv-4bn">
-                    <rect key="frame" x="198" y="87" width="75" height="30"/>
-                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="erre">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="N0x-oP-Nrt"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PS-H7-qmT">
-                    <rect key="frame" x="292" y="87" width="75" height="30"/>
+                    <rect key="frame" x="277" y="85" width="75" height="31"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="erere">
+                    <state key="normal">
+                        <string key="title">☜(ﾟヮﾟ☜)
+</string>
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="wkq-kb-AGX"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9K-vr-bbE">
-                    <rect key="frame" x="8" y="87" width="75" height="30"/>
+                    <rect key="frame" x="27" y="86" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="  fslkj">
+                    <state key="normal">
+                        <string key="title">( ͠° ͟ʖ ͡°)
+</string>
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="env-rO-u5c"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oah-nf-MbK">
-                    <rect key="frame" x="8" y="124" width="75" height="30"/>
+                    <rect key="frame" x="27" y="123.5" width="75" height="30.5"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="  fslkj">
+                    <state key="normal" title="( ͡~ ͜ʖ ͡°)">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="RJY-Or-ELa"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqM-Uf-8Fp">
-                    <rect key="frame" x="106" y="124" width="75" height="30"/>
+                    <rect key="frame" x="110" y="124" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="ererr">
+                    <state key="normal" title="༼ ▀̿̿Ĺ̯̿̿▀̿ ̿ ༽">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="U4Y-Pu-Evs"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWT-go-gOB">
-                    <rect key="frame" x="106" y="162" width="167" height="30"/>
+                    <rect key="frame" x="106" y="162" width="163" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="ererr">
+                    <state key="normal" title="space">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="spacePressed:" destination="-1" eventType="touchUpInside" id="2LV-6S-TTS"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-gJ-gHr">
-                    <rect key="frame" x="198" y="124" width="75" height="30"/>
+                    <rect key="frame" x="194" y="120" width="75" height="32"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="erer">
+                    <state key="normal" title="(❍ᴥ❍ʋ)">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="whg-uh-1gz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZY-nB-RU1">
-                    <rect key="frame" x="292" y="124" width="75" height="30"/>
+                    <rect key="frame" x="277" y="120" width="75" height="32"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="erer">
+                    <state key="normal" title="del">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="deletePressed:" destination="-1" eventType="touchUpInside" id="h8Q-Xu-OlV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-Sr-HOg">
-                    <rect key="frame" x="292" y="162" width="75" height="30"/>
+                    <rect key="frame" x="277" y="162" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="erer">
+                    <state key="normal" title="return">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="returnPressed:" destination="-1" eventType="touchUpInside" id="ylt-gP-9lJ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-gV-dqz">
-                    <rect key="frame" x="8" y="10" width="75" height="30"/>
+                    <rect key="frame" x="27" y="9" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
                     <state key="normal" title="( ͡° ͜ʖ ͡°)">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="DrS-x0-fci"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-Av-nyr">
-                    <rect key="frame" x="292" y="10" width="75" height="30"/>
+                    <rect key="frame" x="277" y="8" width="75" height="30"/>
                     <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
-                    <state key="normal" title="༼ つ ◕_◕ ༽つ">
+                    <state key="normal" title="(ノಠ益ಠ)ノ">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="xlf-PJ-Cq4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-wv-4bn">
+                    <rect key="frame" x="194" y="85" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ʕ⊙ᴥ⊙ʔ">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="ZHK-yH-maX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-kc-fVx">
+                    <rect key="frame" x="110" y="85" width="76" height="31"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="༼ つ ._. ༽つ">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapDonger:" destination="-1" eventType="touchUpInside" id="5RL-jh-h7J"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="75" height="30"/>
-                    <state key="normal" title="Exit"/>
+                    <rect key="frame" x="27" y="162" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="exit"/>
                 </button>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="612.5" y="544"/>
         </view>
     </objects>
 </document>

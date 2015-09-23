@@ -11,6 +11,10 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
+    @IBOutlet var dongerButtons: [UIButton]!
+    @IBOutlet var returnButton: UIButton!
+    @IBOutlet var spaceButton: UIButton!
+    @IBOutlet var deleteButton: UIButton!
     
     var keyboardView: UIView!
 
@@ -37,7 +41,22 @@ class KeyboardViewController: UIInputViewController {
     override func textDidChange(textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
     }
-
+    @IBAction func didTapDonger(button: UIButton) {
+        let label = button.titleLabel!.text
+        (textDocumentProxy as UIKeyInput).insertText("\(label!)")
+    }
+    
+    @IBAction func spacePressed(button: UIButton) {
+        (textDocumentProxy as UIKeyInput).insertText(" ")
+    }
+    
+    @IBAction func returnPressed(button: UIButton) {
+        (textDocumentProxy as UIKeyInput).insertText("\n")
+    }
+    
+    @IBAction func deletePressed(button: UIButton) {
+        self.textDocumentProxy.deleteBackward()
+    }
     func loadInterface() {
         let keyboardNib = UINib(nibName: "Keyboard", bundle: nil)
         keyboardView = keyboardNib.instantiateWithOwner(self, options: nil)[0] as! UIView
