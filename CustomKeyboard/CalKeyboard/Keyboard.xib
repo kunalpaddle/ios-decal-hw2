@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
@@ -14,19 +14,137 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
-                        <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
-                    </constraints>
-                    <state key="normal" title="N"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i26-hG-HSw">
+                    <rect key="frame" x="106" y="10" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ヽ༼ຈل͜ຈ༽ﾉ">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-xP-kxC">
+                    <rect key="frame" x="198" y="10" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="(◕‿◕✿)">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-ti-eHc">
+                    <rect key="frame" x="106" y="48" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="eon">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-4f-EGh">
+                    <rect key="frame" x="198" y="48" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="r">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v2-Ie-kPO">
+                    <rect key="frame" x="292" y="48" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ererre">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y43-Uc-fv5">
+                    <rect key="frame" x="8" y="48" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="  fslkj">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-kc-fVx">
+                    <rect key="frame" x="106" y="87" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ere">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-wv-4bn">
+                    <rect key="frame" x="198" y="87" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="erre">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PS-H7-qmT">
+                    <rect key="frame" x="292" y="87" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="erere">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9K-vr-bbE">
+                    <rect key="frame" x="8" y="87" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="  fslkj">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oah-nf-MbK">
+                    <rect key="frame" x="8" y="124" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="  fslkj">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqM-Uf-8Fp">
+                    <rect key="frame" x="106" y="124" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ererr">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWT-go-gOB">
+                    <rect key="frame" x="106" y="162" width="167" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ererr">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-gJ-gHr">
+                    <rect key="frame" x="198" y="124" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="erer">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZY-nB-RU1">
+                    <rect key="frame" x="292" y="124" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="erer">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-Sr-HOg">
+                    <rect key="frame" x="292" y="162" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="erer">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-gV-dqz">
+                    <rect key="frame" x="8" y="10" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="( ͡° ͜ʖ ͡°)">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-Av-nyr">
+                    <rect key="frame" x="292" y="10" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.047058828179999998" green="0.082352943720000002" blue="0.1294117719" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                    <state key="normal" title="༼ つ ◕_◕ ༽つ">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="8" y="162" width="75" height="30"/>
+                    <state key="normal" title="Exit"/>
                 </button>
             </subviews>
-            <constraints>
-                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
-            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="605.5" y="542"/>
